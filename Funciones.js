@@ -59,3 +59,21 @@ const duplica = num => num * 2;
 const doble = duplica(36);
 console.log(doble);
 
+//Funciones con parametros opcionales
+const welcomeToMexico = (user = 'Invitado') => {
+    console.log(`Bienvenido a México ${user}`);
+}
+
+welcomeToMexico();
+welcomeToMexico("Batman");
+
+//parametro con nombre
+const welcomeToUtt = (user = 'Invitado', city = 'México') => {
+    console.log(`Bienvenido ${user} de ${city}`)
+}
+
+welcomeToUtt();
+welcomeToUtt('Bruce Wayne', 'Gotham');
+welcomeToUtt(city = 'Metropolis', user = 'Superman');
+
+
